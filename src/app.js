@@ -2,7 +2,7 @@ require('dotenv').config(); //for this we need to add package from npm
 const express = require('express');
 const app = new express();
 const hbs = require('hbs'); //this also need to be added 
-const port = process.env.port || '8000';
+const port = process.env.PORT || '8000';
 const medinRouter = require("./routers/medins");
 //this is we used to recognize the incoming req is json object 
 app.use(express.json());
